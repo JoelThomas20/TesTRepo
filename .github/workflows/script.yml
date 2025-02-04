@@ -19,7 +19,7 @@ jobs:
           node-version: '18'
 
       - name: Install Dependencies
-        run: npm install  # Ensure npm dependencies are installed
+     #   run: npm install  
 
       - name: Run Semantic Release
         uses: cycjimmy/semantic-release-action@v2.5.4
