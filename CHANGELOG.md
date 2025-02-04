@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1](https://github.com/JoelThomas20/TesTRepo/compare/v1.1.0...v1.1.1) (2025-02-04)
+
+
+### Bug Fixes
+
+* Use partition data source on VPC CNI IPv6 policy ([d708ee9](https://github.com/JoelThomas20/TesTRepo/commit/d708ee9044dd81aaf630aba4406111538c540b12))
+
 # [1.1.0](https://github.com/JoelThomas20/TesTRepo/compare/v1.0.0...v1.1.0) (2025-02-04)
 
 
