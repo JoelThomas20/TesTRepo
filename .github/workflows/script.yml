@@ -10,22 +10,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v3  # Updated to v3 for better performance
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18'  # Use latest LTS version
 
-      - name: Release to GitHub
+      - name: Install Dependencies
+        run: npm install  # Ensure dependencies are installed before release
+
+      - name: Run Semantic Release
         uses: cycjimmy/semantic-release-action@v2.5.4
         with:
           semantic_version: 18.0.0
           extra_plugins: |
             @semantic-release/changelog@5.0.1
             @semantic-release/git
-          branches: |
-            ['main']
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Using GH_TOKEN for authentication
