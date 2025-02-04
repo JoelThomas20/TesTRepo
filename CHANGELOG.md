@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.1.0](https://github.com/JoelThomas20/TesTRepo/compare/v1.0.0...v1.1.0) (2025-02-04)
+
+
+### Features
+
+* Add additional IAM policy to allow cluster role to use KMS key provided for cluster encryption ([de16230](https://github.com/JoelThomas20/TesTRepo/commit/de16230b5ecd3ade7c1cb4455a5f62b477d3d4b1))
+
 # 1.0.0 (2025-02-04)
 
 
