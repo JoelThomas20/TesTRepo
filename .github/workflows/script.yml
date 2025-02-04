@@ -13,14 +13,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Install Dependencies
-     #   run: npm install  
-
       - name: Run Semantic Release
         uses: cycjimmy/semantic-release-action@v2.5.4
         with:
